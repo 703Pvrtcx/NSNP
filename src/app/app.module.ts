@@ -36,7 +36,7 @@ import { AngularMaterialModule } from './angular-material.module';
     AngularMaterialModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
-  bootstrap: [AppComponent],  
+  bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}
