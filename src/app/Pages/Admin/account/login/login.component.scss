@@ -1,0 +1,160 @@
+.error-message{
+  color: red;
+}
+
+
+.account-container{
+  ion-segment-button {
+    --background-checked:black;
+    --background:gray;
+    --indicator-color:none;
+    ion-label{
+      color: #fff;
+    }
+  }
+    background: #010100;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    ion-row{
+        height: 20px;
+       ion-col{
+        font-size: 25px;
+        font-weight: bold;
+       }
+    }
+.login{
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: 26px;
+      color: #ffffff;
+      margin-bottom: 15%;
+    }
+
+    img {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      border: 8px solid #ffffff;
+    }
+  }
+}
+    .sign-up{
+
+      h1 {
+        padding-left: 35px;
+        font-weight: 700;
+        font-size: 26px;
+        color: #ffffff;
+        margin-bottom: 15%;
+      }
+    
+      p {
+        text-align: center;
+        color: #b6b6b6;
+        margin-top: 40px;
+      }
+    }
+   
+    
+      #form {
+        margin-top: 5%;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+        ion-button {
+          margin-top: 35px;
+          height: 48px;
+          font-size: 18px;
+          text-transform: initial;
+          border-radius: 50px;
+          box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
+          --box-shadow: none;
+        }
+      }
+}
+ion-content {
+  --background: rgb(187, 162, 162) url('./../../../../../assets/Images/pc.jpg') no-repeat center center / cover;
+
+   opacity: 0.9;
+  color: rgb(255, 255, 255);
+  h3{
+      color:  rgb(2, 29, 80);
+      height: 20px;
+      border-radius: 10px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+  h2{
+      color:  rgb(2, 29, 80);
+      height: 20px;
+      margin-right: 25px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+}
+ion-card-title{
+  color: rgb(255, 255, 255);
+}
+.error-container{
+  color: red;
+  align-items: center;
+}
+P{
+  font-size: small;
+}
+ion-item{
+  border: 1px solid rgb(2, 29, 80);
+  border-radius: 20px 20px 20px 20px;
+  height: 40px;
+  font-size: medium;
+  --color: rgb(2, 20, 36);
+
+}
+
+ion-textarea{
+  border: 1px solid rgb(2, 29, 80);
+  border-radius: 20px 20px 20px 20px;
+  --background: transparent;
+}
+ion-label{
+  font-size: medium;
+  padding-left: 10px;
+  color: rgb(2, 14, 26);
+}
+img{
+  width: 100%;
+  height: 25%;
+}
+ion-card-content{
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: 5px;
+  color: #fff;
+  padding: 10px;  
+  border-right: 1px solid rgb(2, 29, 80);
+  border-left: 1px solid rgb(2, 29, 80);
+}
+ion-grid{
+  margin-top: 25px;
+}
+ion-card{
+  border-radius: 15px;
+  background: black;
+  opacity: 0.8;
+  color: #fff;
+  border: 2px solid rgb(255, 255, 255);
+}
+.logo{
+  height: 100px;
+  width: 100%;
+}
+    
+    

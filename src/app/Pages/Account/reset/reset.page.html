@@ -1,0 +1,67 @@
+
+
+
+  <ion-content  >
+    <ion-header >
+      <ion-toolbar color="dark">  
+        <ion-buttons slot="start" >
+          <ion-button  color="warning">
+            <ion-buttons slot="start">
+              <ion-back-button defaultHref="/signin"></ion-back-button>
+            </ion-buttons>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-grid fixed>
+      <ion-row class="ion-align-items-center" class="ion-justify-content-center">
+        <ion-col sizeXm="12" sizeMd="6" sizeLg="6" >
+        <div>
+          <ion-card>
+            <img src="./../../../../assets/Images/laptop.jpg" class="smallLogo"/>
+        
+          <ion-card-header>
+              <ion-card-title class="ion-text-center">
+                  <h1>Reset Password</h1>           
+                  <p>
+                    Please check your email and click on the link to reset your password.
+                  </p>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+           <form [formGroup]= 'form'>
+             <ion-label  class="ion-text-start" position= 'floating'>Email Address</ion-label>
+             <ion-item>
+               <ion-input  placeholder="example@gmail.com" formControlName='email'></ion-input>
+               <ion-icon name="mail"></ion-icon>
+             </ion-item>
+             <div class="error-container ion-text-center">
+              <ng-container *ngFor="let validation of validation_messages.email">
+                <div class="error-message" *ngIf="form.get('email').hasError(validation.type) && (form.get('email').dirty || form.get('email').touched)">
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                  <span>{{ validation.message }}</span>
+                </div>
+              </ng-container>
+            </div>
+             <br>   
+          
+         <ion-button color="warning" (click)="submitProduct()" expand="block" shape="round" [disabled]="form.invalid">
+          {{loading ? "Loading": "Reset Password"}} 
+        
+         </ion-button>
+         <ion-button color="danger"  routerLink='/signin' expand="block" shape="round" >
+          Cancel
+        </ion-button>
+           </form>
+           <br>
+     
+          </ion-card-content>
+        </ion-card>
+      </div>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    
+ </ion-content>

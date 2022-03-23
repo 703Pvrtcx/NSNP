@@ -1,0 +1,66 @@
+
+          <div  class="ion-text-center">
+          <img class="logo" src="./../../../../assets/Images/laptop.jpg" />
+        
+          <h1>Login</h1>           
+          <p>
+           Login grands you access to your account.
+          </p>
+    </div>
+        <ion-card-content>
+          <form [formGroup]="signinForm" (ngSubmit)="signInWithEmail()">
+            <ion-label position="floating">Email Address</ion-label>
+            <ion-item >
+              <ion-input  type="text" placeholder="itumelengm@gmail.com" formControlName="email" clearInput autocapitalize="off" inputmode="email"></ion-input>
+              <ion-icon name="mail"></ion-icon>
+            </ion-item>
+            <div class="error-container">
+              <ng-container *ngFor="let validation of validation_messages.email">
+                <div class="error-message" *ngIf="signinForm.get('email').hasError(validation.type) && (signinForm.get('email').dirty || signinForm.get('email').touched)">
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                  <span>{{ validation.message }}</span>
+                </div>
+              </ng-container>
+            </div>
+                <ion-label position="floating">Password</ion-label>
+                
+              <ion-item class="input-item">
+                <ion-input type="password" placeholder="******" formControlName="password"></ion-input>
+                <ion-icon name="eye"></ion-icon>
+              </ion-item>
+              <div class="error-container">
+                <ng-container *ngFor="let validation of validation_messages.password">
+                  <div class="error-message" *ngIf="signinForm.get('password').hasError(validation.type) && (signinForm.get('password').dirty || signinForm.get('password').touched)">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    <span>{{ validation.message }}</span>
+                  </div>
+                </ng-container>
+              </div>
+            <h2 class="ion-text-right"><strong  routerLink='/reset'> Forgot Password?</strong>
+    
+            </h2> 
+            <ion-button class="sign-up-btn" type="submit" color="success" expand="block" shape="round" [disabled]="!signinForm.valid">Login</ion-button>
+           
+           
+            <div class="error-container" *ngIf="submitError">
+              <div class="error-message">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span>{{ submitError }}</span>
+              </div>
+            </div>
+     
+          </form>
+        
+  
+          <ion-button color="dark"  routerLink='/profile' expand="block" shape="round" >
+            Profile
+          </ion-button>
+          <h3 class="ion-text-left"><strong>Don't have an account?</strong> <a routerLink='/signup'> Create Account.</a>
+    
+          </h3> 
+  
+         <br>
+   
+        </ion-card-content>
+      
+  

@@ -1,0 +1,51 @@
+
+  <ion-header>
+    <ion-toolbar color="warning">
+      <ion-buttons slot="start" >
+        <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+      <ion-title>Schools</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card-content>
+
+    <ion-item>
+      <ion-label>Filter</ion-label>
+      <ion-input type="text" placeholder="Awesome Input"></ion-input>
+    </ion-item>
+    <mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8"  matSort>
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+      </ng-container>
+  
+      <!-- Progress Column -->
+      <ng-container matColumnDef="progress">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Progress </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="color">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Color </mat-header-cell>
+        <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+  
+ 
+  <mat-paginator [pageSizeOptions]="[5,10,25,50,100]"></mat-paginator>
+  </ion-card-content>
+

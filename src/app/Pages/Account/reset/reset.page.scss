@@ -1,0 +1,67 @@
+ion-content {
+    // --background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(172, 199, 240) 35%, rgb(1, 84, 248) 100%);
+ 
+    --background: #fff url('./../../../../assets/Images/pc.jpg') no-repeat center center / cover;
+    align-content: center;
+    vertical-align:middle;
+    // text-align: center;
+    height: 100%;
+}
+ion-content {
+    --background: rgb(187, 162, 162) url('./../../../../assets/Images/plaop.jpg') no-repeat center center / cover;
+    height: 100%;
+    color: rgb(255, 255, 255);
+}
+ion-card-title{
+    color: rgb(255, 255, 255);
+}
+.error-container{
+    color: red;
+    align-items: center;
+    
+}
+P{
+    font-size: small;
+}
+ion-item{
+    border: 1px solid rgb(2, 29, 80);
+    border-radius: 20px 20px 20px 20px;
+    height: 40px;
+    font-size: small;
+    position: relative;
+    color: rgb(2, 20, 36);
+
+}
+ion-textarea{
+    border: 1px solid rgb(2, 29, 80);
+    border-radius: 20px 20px 20px 20px;
+    --background: transparent;
+}
+ion-label{
+    font-size: medium;
+    // padding-bottom: 15px;
+    padding-left: 10px;
+    color: rgb(2, 14, 26);
+}
+img{
+    width: 100%;
+    height: 25%;
+}
+ion-card-content{
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;  
+    border-right: 1px solid rgb(2, 29, 80);
+    border-left: 1px solid rgb(2, 29, 80);
+}
+ion-grid{
+    margin-top: 25px;
+}
+ion-card{
+    border-radius: 15px;
+    background: black;
+    opacity: 0.8;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+}

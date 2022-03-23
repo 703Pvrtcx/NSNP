@@ -1,20 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+<ion-content class="home" >
+    <ion-grid fixed>
+      <ion-row class="ion-align-items-center" class="ion-justify-content-center">
+        <ion-col sizeXm="12" sizeMd="8" sizeLg="6"  >
+          <ion-card class="bg-transparent">
+ 
+            <ion-card-header>
+           <ion-card-title class="title"> Welcome to NSNP</ion-card-title>
+           <br>
+           <ion-card-subtitle class="subtitle">National School Nutrition Project</ion-card-subtitle>
+         </ion-card-header>
+         <ion-button color="tertiary"  (click)="signup()" expand="block"  shape="round">
+           Sign Up
+         </ion-button>
+         <br>
+         <ion-button color="light" (click)="signin()" expand="block" fill="outline" shape="round">
+           Sign In
+         </ion-button>
+       </ion-card>
+      
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+ 
+
 </ion-content>

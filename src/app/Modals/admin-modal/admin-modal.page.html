@@ -1,0 +1,62 @@
+
+  <!-- <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title color="warning">{{item.name}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="closeModal()">
+          <ion-icon color="danger" slot="start" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header> -->
+
+
+  <ion-card>
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-buttons color="dark" slot="start" >
+          <ion-back-button defaultHref="/admin"></ion-back-button>
+      </ion-buttons>
+    
+      <ion-title color="dark">{{item.name}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="closeModal()" routerLink="/admin">
+          <ion-icon color="dark" slot="start" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col sizeXs="12" sizeSm="12" sizeMd="6">
+          <ion-card-content>
+            <img  [src]= "'../../../../assets/Beverages/' + item.imageURL" >
+          </ion-card-content>
+
+        </ion-col>
+        <ion-col   sizeXs="12" sizeSm="12" sizeMd="6">
+          <ion-card-header>
+            <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
+            <ion-card-title>R{{item.value}}</ion-card-title>
+         
+
+            <p>{{item.description}}</p>
+          </ion-card-header>
+        </ion-col>
+        
+  
+  
+
+      </ion-row>
+    </ion-grid>
+
+
+   
+  
+
+
+  </ion-card>
+          

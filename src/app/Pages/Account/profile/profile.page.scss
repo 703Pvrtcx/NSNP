@@ -1,0 +1,58 @@
+ion-content {
+
+    // --background: linear-gradient(90deg, rgb(4, 47, 163) 0%, rgb(200, 222, 255) 35%, rgb(3, 49, 141) 100%);
+    // --background: #fff url('./../../../../assets/Images/pc.jpg') no-repeat center center / cover;
+    ion-grid{
+        border-radius: 15px;
+        border: rgb(1, 43, 83) 1px solid;
+        width: 99%;
+        height: 100%;
+    }
+    .profile{
+        border-radius: 15px;
+        border: rgb(1, 43, 83) 1px solid;
+        width: 99%;
+        text-align: left;
+        padding-left: 25px;
+        
+        background: white;
+    }
+    .about{
+        border-radius: 15px;
+        border: rgb(1, 43, 83) 1px solid;
+        width: 99%;
+        text-align: center;
+        background: white;
+    }
+    .role{
+        border-radius: 15px;
+        border: rgb(1, 43, 83) 1px solid;
+        width: 99%;
+        text-align: center;
+        background: white;
+    }
+    table{
+        width: 100%;
+        th{
+            border: rgb(1, 43, 83) 2px solid;
+            height: 35px;
+            border-radius: 55px;
+        }
+        td{
+            border: rgb(1, 43, 83) 2px solid;
+            height: 35px;
+            border-radius: 55px;
+        }
+    }
+}
+.topbar{
+
+    height: 60.07px;
+    background: #C4C4C4;
+    mix-blend-mode: normal;
+    border-radius: 25px; 
+    
+    ion-row{
+        margin-left: -5px;
+    }
+}

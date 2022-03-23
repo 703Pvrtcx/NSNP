@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home"></ion-back-button>
+  </ion-buttons>
+
+    <ion-title>Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-grid >
+  <ion-row>
+    <ion-col *ngFor="let user of user" sizeLg="3"  sizeMd="4"  sizeSm="6" sizeXs="6">
+      <ion-card (click)="openModal(user)">
+    
+        <ion-card-subtitle>{{user.key}}{{user.name}}  </ion-card-subtitle>
+       
+        <ion-card-content>
+        
+          <img [src]= "'../../../../assets/Beverages/' + user.imageURL" >
+               
+        </ion-card-content>
+  
+
+            <ion-text color="primary">
+              {{user.description}}
+            </ion-text>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+ 

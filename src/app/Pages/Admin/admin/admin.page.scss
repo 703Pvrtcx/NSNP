@@ -1,0 +1,19 @@
+ion-card{
+    border-radius: 15px;
+    border: yellow solid 1px;
+    img{
+        height: 40%;
+    }
+}
+
+ion-card:hover{
+    border-radius: 25px;
+    border: rgb(0, 0, 0) solid 1px;
+}
+.card{
+    height: 100%;
+    img{
+        height: 40%;
+    }
+    width: 100%;
+}
