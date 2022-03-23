@@ -1,0 +1,7 @@
+{
+  "name": "NSNP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
