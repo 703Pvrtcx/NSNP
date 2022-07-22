@@ -7,12 +7,12 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'dashboard/home',
     pathMatch: 'full'
-  }, 
+  },
   {
       path:'',
       component: DashboardPage,
       children:[
-  
+
         {
           path: '',
           redirectTo: 'home',
@@ -25,7 +25,7 @@ export const routes: Routes = [
         {
           path:'admin',
           loadChildren:() => import('./Pages/Admin/admin/admin.module').then(m=>m.AdminPageModule)
-        }, 
+        },
         {
           path: 'admin-modal',
           loadChildren: () => import('./Modals/admin-modal/admin-modal.module').then( m => m.AdminModalPageModule)
